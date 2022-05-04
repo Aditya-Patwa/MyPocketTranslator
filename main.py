@@ -24,10 +24,10 @@ for key, value in translation.items():
      {words}
      """)
 
-st.header("Synonyms")
-synonym = dictionary.synonym(textInput)
-st.markdown(f"{synonym}")
+# st.header("Synonyms")
+# synonym = dictionary.synonym(textInput)
+# st.markdown(f"{synonym}")
 
-st.header("Antonyms")
-antonym = dictionary.antonym(textInput)
-st.markdown(f"{antonym}")
+# st.header("Antonyms")
+# antonym = dictionary.antonym(textInput)
+# st.markdown(f"{antonym}")
