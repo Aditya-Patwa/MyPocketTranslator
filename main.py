@@ -17,12 +17,15 @@ textInput = st.text_input('Word')
 translation = dictionary.meaning(textInput)
 
 st.header("Meanings")
-for key, value in translation.items():
-     words = ", ".join(value)
-     st.markdown(f"""
-     ##### {key}
-     {words}
-     """)
+try:
+     for key, value in translation.items():
+          words = ", ".join(value)
+          st.markdown(f"""
+          ##### {key}
+          {words}
+          """)
+except:
+     st.markdown(f"{translation}")
 
 # st.header("Synonyms")
 # synonym = dictionary.synonym(textInput)
