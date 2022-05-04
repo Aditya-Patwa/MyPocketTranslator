@@ -13,7 +13,7 @@ st.title("MyPocketTranslator")
 #      'To',
 #      ('en', 'fr', 'es', 'hi'))
 
-textInput = st.text_input('Word to Translate')
+textInput = st.text_input('Word')
 translation = dictionary.meaning(textInput)
 
 st.header("Meanings")
