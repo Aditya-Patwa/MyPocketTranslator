@@ -1,10 +1,5 @@
 import streamlit as st
-try:
-     from PyDictionary import PyDictionary
-except:
-     import os
-     os.system("pip install PyDictionary")
-     from PyDictionary import PyDictionary
+from PyDictionary import PyDictionary
 
 dictionary = PyDictionary()
 
